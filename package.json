@@ -1,0 +1,26 @@
+{
+  "name": "baha-live-push",
+  "version": "0.1.0",
+  "description": "Auto update comment section of Bahamut article page.",
+  "keywords": [
+    "userscript",
+    "bahamut"
+  ],
+  "homepage": "https://github.com/eight04/baha-live-push",
+  "bugs": "https://github.com/eight04/baha-live-push/issues",
+  "license": "MIT",
+  "author": "eight04 <eight04@gmail.com>",
+  "main": "baha-live-push.user.js",
+  "repository": "eight04/baha-live-push",
+  "scripts": {
+    "test": "eslint .",
+    "preversion": "npm test",
+    "version": "sync-version baha-live-push.user.js && git add .",
+    "postversion": "git push --follow-tags"
+  },
+  "private": true,
+  "devDependencies": {
+    "eslint": "^9.38.0",
+    "sync-version": "^1.1.0"
+  }
+}
