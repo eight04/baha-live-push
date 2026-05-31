@@ -4,7 +4,7 @@
 // @namespace   https://github.com/eight04
 // @match       https://forum.gamer.com.tw/Co.php*
 // @match       https://forum.gamer.com.tw/C.php*
-// @version     0.1.0
+// @version     0.1.1
 // @author      eight04 <eight04@gmail.com> (https://github.com/eight04)
 // @homepage	https://github.com/eight04/baha-live-push
 // @supportURL	https://github.com/eight04/baha-live-push/issues
