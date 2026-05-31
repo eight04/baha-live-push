@@ -1,6 +1,6 @@
 {
   "name": "baha-live-push",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Auto update comment section of Bahamut article page.",
   "keywords": [
     "userscript",
