@@ -70,13 +70,12 @@ sentinel.on("[id^=Commendlist]:not(.live)", el => {
       status.textContent = "正在更新...";
       const res = await fetch(`https://forum.gamer.com.tw/ajax/moreCommend.php?bsn=${bsn}&snB=${snb}&returnHtml=1`, {signal});
       const data = await res.json();
-      const lastCommentId = Number(el.children[el.children.length - 1].id.match(/\d+/)[0]);
-      if (!lastCommentId) throw new Error("無法取得最後一則推文的 ID");
-      const comments = data.html.filter(h => {
+      const lastCommentId = el.children.length ? Number(el.children[el.children.length - 1].id.match(/\d+/)[0]) : null;
+      const comments = lastCommentId ? data.html.filter(h => {
         const id = h.match(/id="Commendcontent_(\d+)"/)[1];
         if (!id) throw new Error("無法取得推文 ID");
         return Number(id) > Number(lastCommentId);
-      });
+      }) : data.html;
       el.insertAdjacentHTML("beforeend", comments.join(""));
       await Promise.race(
         [
