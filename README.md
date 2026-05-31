@@ -3,9 +3,10 @@
 
 [![.github/workflows/build.yml](https://github.com/eight04/baha-live-push/actions/workflows/build.yml/badge.svg)](https://github.com/eight04/baha-live-push/actions/workflows/build.yml)
 
-一個用於巴哈姆特電玩資訊站的推文實況腳本，自動讀取新推文並加入頁面中
+一個用於巴哈姆特電玩資訊站的推文/留言實況腳本，自動讀取新推文並加入頁面中
 
 安裝後會在回覆欄加入一行狀態與按鈕
+<img width="894" height="69" alt="Image" src="https://github.com/user-attachments/assets/18fe4fa9-8350-45a3-bc7f-f4617c1908c3" />
 
 Install
 -------
@@ -24,6 +25,10 @@ Compatibility
 Changelog
 ---------
 
+* 0.1.1 (May 31, 2026)
+
+  - Fix: start error when there is no comment.
+
 * 0.1.0 (May 31, 2026)
 
-	- First release.
+  - First release.
